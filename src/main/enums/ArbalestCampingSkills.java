@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ArbalestCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum ArbalestCampingSkills implements CampingSkills {
     CLEAN_GUNS,
     MARCHING_PLAN,
     RESTRING_CROSSBOW,

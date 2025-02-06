@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ManAtArmsCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum ManAtArmsCampingSkills implements CampingSkills {
     WEAPONS_PRACTICE,
     MAINTENANCE,
     TACTICS,

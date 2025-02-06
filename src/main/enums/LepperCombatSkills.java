@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum LepperCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum LepperCombatSkills implements CombatSkills {
     CHOP,
     HEWS,
     PURGE,

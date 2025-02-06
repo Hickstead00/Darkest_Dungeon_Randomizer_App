@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum HoundmasterCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum HoundmasterCombatSkills implements CombatSkills {
     HOUNDS_RUSH,
     WHISTLE,
     HOUNDS_HARRY,

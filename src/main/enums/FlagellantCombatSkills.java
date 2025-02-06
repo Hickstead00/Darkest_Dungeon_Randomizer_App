@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum FlagellantCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum FlagellantCombatSkills implements CombatSkills {
     PUNISH,
     RAIN_OF_SORROWS,
     EXSANGUINATE,

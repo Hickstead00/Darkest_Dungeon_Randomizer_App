@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum HoundmasterCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum HoundmasterCampingSkills implements CampingSkills {
     HOUNDS_WATCH,
     MAN_TRACKER,
     THERAPY_DOG,

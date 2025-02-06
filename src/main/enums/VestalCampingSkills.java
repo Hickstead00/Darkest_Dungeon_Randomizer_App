@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum VestalCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum VestalCampingSkills implements CampingSkills {
     PRAY,
     BLESS,
     SANCTUARY,

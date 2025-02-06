@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ShieldbreakerCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum ShieldbreakerCampingSkills implements CampingSkills {
     SERPENTINE_RITUAL,
     EXOTIC_BEVERAGES,
     MAINTENANCE,

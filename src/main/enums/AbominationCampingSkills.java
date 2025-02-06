@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum AbominationCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum AbominationCampingSkills implements CampingSkills {
     ANGER_MANAGEMENT,
     PSYCH_UP,
     THE_BEAST_RINGS,

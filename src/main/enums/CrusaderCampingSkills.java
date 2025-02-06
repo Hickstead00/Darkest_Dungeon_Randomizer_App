@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum CrusaderCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum CrusaderCampingSkills implements CampingSkills {
     UNSHAKEABLE_LEADER,
     ZEALOUS_SPEECH,
     ZEALOUS_VIGIL,

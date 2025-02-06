@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum FlagellantCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum FlagellantCampingSkills implements CampingSkills {
     LASH_ANGER,
     SEEK_REDEMPTION,
     SACRED_SCROLL,

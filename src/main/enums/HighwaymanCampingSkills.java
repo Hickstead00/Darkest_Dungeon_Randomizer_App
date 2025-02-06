@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum HighwaymanCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum HighwaymanCampingSkills implements CampingSkills {
     CLEAN_GUNS,
     BANDIT_SENSE,
     GALLOWS_HUMOR,

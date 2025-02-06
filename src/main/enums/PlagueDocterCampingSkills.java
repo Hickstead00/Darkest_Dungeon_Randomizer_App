@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum PlagueDocterCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum PlagueDocterCampingSkills implements CampingSkills {
     LEECHES,
     EXPERIMENTAL_VAPOURS,
     PREVENTIVE_MEDICINE,

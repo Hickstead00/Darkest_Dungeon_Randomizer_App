@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum BountyHunterCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum BountyHunterCombatSkills implements CombatSkills {
     COLLECT_BOUNTY,
     MARK_FOR_DEATH,
     COME_HITHER,

@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum PlagueDocterCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum PlagueDocterCombatSkills implements CombatSkills {
     NOXIOUS_BLAST,
     PLAGUE_GRENADE,
     BLINDING_GAS,

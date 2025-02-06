@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ShieldbreakerCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum ShieldbreakerCombatSkills implements CombatSkills {
     PIERCE,
     PUNCTURE,
     IMPALE,

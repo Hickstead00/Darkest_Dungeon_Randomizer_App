@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum GraveRobberCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum GraveRobberCombatSkills implements CombatSkills {
     PICK_TO_THE_FACE,
     LUNGE,
     FLASHING_DAGGERS,

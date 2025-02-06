@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum JesterCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum JesterCombatSkills implements CombatSkills {
     DIRK_STAB,
     HARVEST,
     SOLO,

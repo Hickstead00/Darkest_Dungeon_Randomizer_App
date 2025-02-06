@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum VestalCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum VestalCombatSkills implements CombatSkills {
     DIVINE_GRACE,
     DIVINE_COMFORT,
     DAZZLING_LIGHT,

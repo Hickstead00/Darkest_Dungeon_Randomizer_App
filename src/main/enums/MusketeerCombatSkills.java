@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum MusketeerCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum MusketeerCombatSkills implements CombatSkills {
     AIMED_SHOT,
     SMOKESCREEN,
     CALL_THE_SHOT,

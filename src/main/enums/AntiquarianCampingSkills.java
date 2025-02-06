@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum AntiquarianCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum AntiquarianCampingSkills implements CampingSkills {
     STRANGE_POWDERS,
     RESUPPLY,
     TRINKET_SCROUNGE,

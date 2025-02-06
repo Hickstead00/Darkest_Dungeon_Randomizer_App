@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum LepperCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum LepperCampingSkills implements CampingSkills {
     REFLECTION,
     QUARANTINE,
     BLOODY_SHROUD,

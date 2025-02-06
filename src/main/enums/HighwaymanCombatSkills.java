@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum HighwaymanCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum HighwaymanCombatSkills implements CombatSkills {
     WICKED_SLICE,
     PISTOL_SHOT,
     POINT_BLANK_SHOT,

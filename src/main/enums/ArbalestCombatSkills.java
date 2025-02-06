@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ArbalestCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum ArbalestCombatSkills implements CombatSkills {
     SNIPER_SHOT,
     SNIPER_MARK,
     SUPPRESSING_FIRE,

@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum OccultistCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum OccultistCombatSkills implements CombatSkills {
     SACRIFICIAL_STAB,
     ABYSSAL_ARTILLERY,
     WEAKENING_CURSE,

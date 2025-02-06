@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum AntiquarianCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum AntiquarianCombatSkills implements CombatSkills {
     FESTERING_VAPOURS,
     GET_DOWN,
     PROTECT_ME,

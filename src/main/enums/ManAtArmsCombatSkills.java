@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum ManAtArmsCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum ManAtArmsCombatSkills implements CombatSkills {
     CRUSH,
     RAMPART,
     DEFENDER,

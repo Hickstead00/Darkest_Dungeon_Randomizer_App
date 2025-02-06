@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum OccultistCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum OccultistCampingSkills implements CampingSkills {
     DARK_RITUAL,
     DARK_STRENGTH,
     UNSPEAKABLE_COMMUNE,

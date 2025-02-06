@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum CrusaderCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum CrusaderCombatSkills implements CombatSkills {
     SMITE,
     STUNNING_BLOW,
     HOLY_LANCE,

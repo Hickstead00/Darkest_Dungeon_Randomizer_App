@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum HellionCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum HellionCombatSkills implements CombatSkills {
     WICKED_HACK,
     IRON_SWAN,
     BARBARIC_YAWP,

@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum MusketeerCampingSkills {
+import main.interfaces.CampingSkills;
+
+public enum MusketeerCampingSkills implements CampingSkills {
     CLEAN_MUSKET,
     MARCHING_PLAN,
     RESTRING_CROSSBOW,

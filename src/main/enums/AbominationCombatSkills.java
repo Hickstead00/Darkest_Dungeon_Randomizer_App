@@ -1,6 +1,8 @@
 package main.enums;
 
-public enum AbominationCombatSkills {
+import main.interfaces.CombatSkills;
+
+public enum AbominationCombatSkills implements CombatSkills {
     MANACLES,
     ABSOLUTION,
     BEAST_BILE,
