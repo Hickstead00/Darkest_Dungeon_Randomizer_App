@@ -15,8 +15,7 @@ public class Character {
     private int level;
     private String sex;
 
-    public Character(String name, CharacterClass characterCLass) {
-        this.name = name;
+    public Character(CharacterClass characterCLass) {
         this.characterCLass = characterCLass;
         this.level = 0;
         this.combatSkills = assignCombatSkills(characterCLass);
@@ -60,6 +59,10 @@ public class Character {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getLevel() {

@@ -3,9 +3,9 @@ package main;
 public class Main {
     public static void main(String[] args) {
         // Créer quelques personnages
-        Character crusader = new Character("Reynauld", CharacterClass.CRUSADER);
-        Character vestal = new Character("Junia", CharacterClass.VESTAL);
-        Character plague = new Character("Paracelse", CharacterClass.PLAGUE_DOCTOR);
+        Character crusader = new Character(CharacterClass.CRUSADER);
+        Character vestal = new Character(CharacterClass.VESTAL);
+        Character plague = new Character(CharacterClass.PLAGUE_DOCTOR);
 
         // Afficher les informations pour chaque personnage
         System.out.println("=== " + crusader.getName() + " le Crusader ===");
