@@ -1,0 +1,23 @@
+package main;
+
+public enum CharacterClass {
+    ABOMINATION,
+    ANTIQUARIAN,
+    ARBALEST,
+    BOUNTY_HUNTER,
+    CRUSADER,
+    GRAVE_ROBBER,
+    HELLION,
+    HIGHWAYMAN,
+    HOUNDMASTER,
+    JESTER,
+    LEPER,
+    MAN_AT_ARMS,
+    MUSKETEER,
+    OCCULTIST,
+    PLAGUE_DOCTOR,
+    VESTAL,
+    FLAGELLANT,
+    SHIELDBREAKER,
+
+}
