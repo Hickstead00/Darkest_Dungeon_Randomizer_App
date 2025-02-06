@@ -20,17 +20,27 @@ public class Character {
         this.characterCLass = characterCLass;
         this.level = 0;
         this.combatSkills = assignCombatSkills(characterCLass);
+        this.campingSkills = assignCampingSkills(characterCLass);
     }
 
     public Character(String name, CharacterClass characterCLass, int level) {
         this.name = name;
         this.characterCLass = characterCLass;
         this.level = level;
+        this.combatSkills = assignCombatSkills(characterCLass);
+        this.campingSkills = assignCampingSkills(characterCLass);
     }
 
     private List<? extends CombatSkills> assignCombatSkills(CharacterClass characterClass) {
-        List<? extends CombatSkills> allCombatSkills = characterClass.getSkills();
+        List<? extends CombatSkills> allCombatSkills = characterClass.getCombatSkills();
         List<CombatSkills> shuffledSkills = new ArrayList<>(allCombatSkills);
+        Collections.shuffle(shuffledSkills);
+        return shuffledSkills.subList(0, 4);
+    }
+
+    private List<? extends CampingSkills> assignCampingSkills(CharacterClass characterClass) {
+        List<? extends CampingSkills> allCampingSkills = characterClass.getCampingSkills();
+        List<CampingSkills> shuffledSkills = new ArrayList<>(allCampingSkills);
         Collections.shuffle(shuffledSkills);
         return shuffledSkills.subList(0, 4);
     }
