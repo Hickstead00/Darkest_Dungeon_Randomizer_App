@@ -1,28 +1,22 @@
 package main;
 
+import java.util.ArrayList;
+import java.util.List;
+import main.view.ConsoleView;
+
 public class Main {
     public static void main(String[] args) {
-        // Créer quelques personnages
-        Character crusader = new Character(CharacterClass.CRUSADER);
-        Character vestal = new Character(CharacterClass.VESTAL);
-        Character plague = new Character(CharacterClass.PLAGUE_DOCTOR);
-
-        // Afficher les informations pour chaque personnage
-        System.out.println("=== " + crusader.getName() + " le Crusader ===");
-        System.out.println("Niveau: " + crusader.getLevel());
-        System.out.println("Combat skills: ");
-        crusader.getCombatSkills().forEach(skill -> System.out.println("- " + skill));
-        System.out.println();
-
-        System.out.println("=== " + vestal.getName() + " la Vestal ===");
-        System.out.println("Niveau: " + vestal.getLevel());
-        System.out.println("Combat skills: ");
-        vestal.getCombatSkills().forEach(skill -> System.out.println("- " + skill));
-        System.out.println();
-
-        System.out.println("=== " + plague.getName() + " le Plague Doctor ===");
-        System.out.println("Niveau: " + plague.getLevel());
-        System.out.println("Combat skills: ");
-        plague.getCombatSkills().forEach(skill -> System.out.println("- " + skill));
+        List<String> liste = new ArrayList<>();
+        liste.add("Reynauld");
+        liste.add("Dismas");
+        liste.add("Junia");
+        liste.add("Paracelse");
+        
+        ConsoleView view = new ConsoleView();
+        RosterManager rosterManager = new RosterManager();
+        CharacterManager characterManager = new CharacterManager(liste, rosterManager, view);
+        
+        characterManager.recruitmentSession();
+        view.displayRoster(rosterManager.toString());
     }
 } 
