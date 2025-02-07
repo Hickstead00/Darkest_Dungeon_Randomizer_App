@@ -53,10 +53,11 @@ public class RosterManager {
         StringBuilder sb = new StringBuilder();
         sb.append("=== ROSTER ===\n");
         for (Character c : roster) {
-            sb.append(String.format("Nom: %s - Classe: %s - Niveau: %d\n", 
+            sb.append(String.format("Nom: %s - Classe: %s - Niveau: %d%s\n", 
                 c.getName(), 
                 c.getCharacterClass(), 
-                c.getLevel()));
+                c.getLevel(),
+                c.isAvailable() ? "" : " - INDISPONIBLE (" + c.getUnavailabilityReason() + ")"));
             sb.append("Combat Skills: ");
             c.getCombatSkills().forEach(skill -> sb.append(skill + ", "));
             sb.append("\nCamping Skills: ");
@@ -69,14 +70,15 @@ public class RosterManager {
     public List<Character> generateTeamForMission(int missionLevel) {
         List<Character> availableCharacters = new ArrayList<>();
         
-        // Filtrer les personnages selon le niveau de mission
         for (Character c : roster) {
+            if (!c.isAvailable()) continue;  // Ignorer les personnages indisponibles
+            
             int charLevel = c.getLevel();
             boolean isEligible = switch (missionLevel) {
                 case 1 -> charLevel >= 0 && charLevel <= 2;
-                case 2 -> charLevel >= 3 && charLevel <= 4;
-                case 3 -> charLevel >= 4 && charLevel <= 5;
-                case 4 -> charLevel == 6;
+                case 2 -> charLevel >= 2 && charLevel <= 3;
+                case 3 -> charLevel >= 3 && charLevel <= 5;
+                case 4 -> charLevel >= 5 && charLevel <= 6;
                 default -> false;
             };
             
@@ -93,5 +95,11 @@ public class RosterManager {
         // Mélanger la liste et prendre les 4 premiers
         Collections.shuffle(availableCharacters);
         return availableCharacters.subList(0, 4);
+    }
+
+    public void setMaxSize(int newSize) {
+        if (newSize > this.rostermaxSize) {
+            this.rostermaxSize = newSize;
+        }
     }
 }

@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7da8d4aa-8f24-4aef-a422-e945bfca83ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/CharacterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/CharacterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/RosterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/RosterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/utils/JsonDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/utils/JsonDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/view/ConsoleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/names.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/names.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="Darkest_Dungeon_Randomizer_App" />
+      <module name="roster-manager" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -120,7 +124,7 @@
       <workItem from="1738876513859" duration="4555000" />
       <workItem from="1738930240830" duration="193000" />
       <workItem from="1738949805820" duration="4531000" />
-      <workItem from="1738954957277" duration="754000" />
+      <workItem from="1738954957277" duration="5113000" />
     </task>
     <servers />
   </component>

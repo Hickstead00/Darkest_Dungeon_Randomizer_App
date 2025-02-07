@@ -8,26 +8,30 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Character {
-    private CharacterClass characterCLass;
+    private CharacterClass characterClass;
     private List<? extends CampingSkills> campingSkills;
     private List<? extends CombatSkills> combatSkills;
     private String name;
     private int level;
     private String sex;
+    private boolean isAvailable;
+    private String unavailabilityReason;
 
-    public Character(CharacterClass characterCLass) {
-        this.characterCLass = characterCLass;
+    public Character(CharacterClass characterClass) {
+        this.characterClass = characterClass;
         this.level = 0;
-        this.combatSkills = assignCombatSkills(characterCLass);
-        this.campingSkills = assignCampingSkills(characterCLass);
+        this.combatSkills = assignCombatSkills(characterClass);
+        this.campingSkills = assignCampingSkills(characterClass);
+        this.isAvailable = true;
+        this.unavailabilityReason = "";
     }
 
-    public Character(String name, CharacterClass characterCLass, int level) {
+    public Character(String name, CharacterClass characterClass, int level) {
         this.name = name;
-        this.characterCLass = characterCLass;
+        this.characterClass = characterClass;
         this.level = level;
-        this.combatSkills = assignCombatSkills(characterCLass);
-        this.campingSkills = assignCampingSkills(characterCLass);
+        this.combatSkills = assignCombatSkills(characterClass);
+        this.campingSkills = assignCampingSkills(characterClass);
     }
 
     private List<? extends CombatSkills> assignCombatSkills(CharacterClass characterClass) {
@@ -46,7 +50,7 @@ public class Character {
 
     // Getters et Setters
     public CharacterClass getCharacterClass() {
-        return characterCLass;
+        return characterClass;
     }
 
     public List<? extends CampingSkills> getCampingSkills() {
@@ -79,5 +83,18 @@ public class Character {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public String getUnavailabilityReason() {
+        return unavailabilityReason;
+    }
+
+    public void setAvailability(boolean available, String reason) {
+        this.isAvailable = available;
+        this.unavailabilityReason = reason;
     }
 }

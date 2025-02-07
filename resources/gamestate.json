@@ -1,0 +1,220 @@
+{
+  "roster": [
+    {
+      "characterClass": "ANTIQUARIAN",
+      "campingSkills": [
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "STRANGE_POWDERS"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "ENCOURAGE"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "TRINKET_SCROUNGE"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "RESUPPLY"
+        }
+      ],
+      "combatSkills": [
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "GET_DOWN"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "INVIGORATING_VAPOURS"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "FLASHPOWDER"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "PROTECT_ME"
+        }
+      ],
+      "name": "Luffy",
+      "level": 0,
+      "isAvailable": true,
+      "unavailabilityReason": ""
+    },
+    {
+      "characterClass": "ARBALEST",
+      "campingSkills": [
+        {
+          "type": "main.enums.ArbalestCampingSkills",
+          "data": "MARCHING_PLAN"
+        },
+        {
+          "type": "main.enums.ArbalestCampingSkills",
+          "data": "TRIAGE"
+        },
+        {
+          "type": "main.enums.ArbalestCampingSkills",
+          "data": "CLEAN_GUNS"
+        },
+        {
+          "type": "main.enums.ArbalestCampingSkills",
+          "data": "RESTRING_CROSSBOW"
+        }
+      ],
+      "combatSkills": [
+        {
+          "type": "main.enums.ArbalestCombatSkills",
+          "data": "BLINDFIRE"
+        },
+        {
+          "type": "main.enums.ArbalestCombatSkills",
+          "data": "SNIPER_MARK"
+        },
+        {
+          "type": "main.enums.ArbalestCombatSkills",
+          "data": "SUPPRESSING_FIRE"
+        },
+        {
+          "type": "main.enums.ArbalestCombatSkills",
+          "data": "BATTLEFIELD_BANDAGE"
+        }
+      ],
+      "name": "Neo",
+      "level": 0,
+      "isAvailable": true,
+      "unavailabilityReason": ""
+    },
+    {
+      "characterClass": "BOUNTY_HUNTER",
+      "campingSkills": [
+        {
+          "type": "main.enums.BountyHunterCampingSkills",
+          "data": "PLAN_TAKEDOWN"
+        },
+        {
+          "type": "main.enums.BountyHunterCampingSkills",
+          "data": "CLEAN_GUNS"
+        },
+        {
+          "type": "main.enums.BountyHunterCampingSkills",
+          "data": "TRACKING_LESSONS"
+        },
+        {
+          "type": "main.enums.BountyHunterCampingSkills",
+          "data": "SCOUT_AHEAD"
+        }
+      ],
+      "combatSkills": [
+        {
+          "type": "main.enums.BountyHunterCombatSkills",
+          "data": "COME_HITHER"
+        },
+        {
+          "type": "main.enums.BountyHunterCombatSkills",
+          "data": "MARK_FOR_DEATH"
+        },
+        {
+          "type": "main.enums.BountyHunterCombatSkills",
+          "data": "FINISH_HIM"
+        },
+        {
+          "type": "main.enums.BountyHunterCombatSkills",
+          "data": "FLASHBANG"
+        }
+      ],
+      "name": "Maximus",
+      "level": 0,
+      "isAvailable": true,
+      "unavailabilityReason": ""
+    },
+    {
+      "characterClass": "CRUSADER",
+      "campingSkills": [
+        {
+          "type": "main.enums.CrusaderCampingSkills",
+          "data": "UNSHAKEABLE_LEADER"
+        },
+        {
+          "type": "main.enums.CrusaderCampingSkills",
+          "data": "ZEALOUS_SPEECH"
+        },
+        {
+          "type": "main.enums.CrusaderCampingSkills",
+          "data": "ZEALOUS_VIGIL"
+        },
+        {
+          "type": "main.enums.CrusaderCampingSkills",
+          "data": "STAND_FIRM"
+        }
+      ],
+      "combatSkills": [
+        {
+          "type": "main.enums.CrusaderCombatSkills",
+          "data": "INSPIRING_CRY"
+        },
+        {
+          "type": "main.enums.CrusaderCombatSkills",
+          "data": "SMITE"
+        },
+        {
+          "type": "main.enums.CrusaderCombatSkills",
+          "data": "HOLY_LANCE"
+        },
+        {
+          "type": "main.enums.CrusaderCombatSkills",
+          "data": "BULWARK_OF_FAITH"
+        }
+      ],
+      "name": "Charles_Barkley",
+      "level": 0,
+      "isAvailable": true,
+      "unavailabilityReason": ""
+    },
+    {
+      "characterClass": "ANTIQUARIAN",
+      "campingSkills": [
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "ENCOURAGE"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "TRINKET_SCROUNGE"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "STRANGE_POWDERS"
+        },
+        {
+          "type": "main.enums.AntiquarianCampingSkills",
+          "data": "RESUPPLY"
+        }
+      ],
+      "combatSkills": [
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "PROTECT_ME"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "FESTERING_VAPOURS"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "FORTIFYING_VAPOURS"
+        },
+        {
+          "type": "main.enums.AntiquarianCombatSkills",
+          "data": "NERVOUS_STAB"
+        }
+      ],
+      "name": "Levi",
+      "level": 0,
+      "isAvailable": false,
+      "unavailabilityReason": "Stress"
+    }
+  ],
+  "maxRosterSize": 9
+}

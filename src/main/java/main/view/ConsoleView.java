@@ -5,6 +5,7 @@ import main.Character;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class ConsoleView {
     private Scanner scanner;
@@ -14,15 +15,30 @@ public class ConsoleView {
     }
 
     public int displayMainMenu() {
-        System.out.println("\n=== DARKEST DUNGEON ROSTER MANAGER ===");
-        System.out.println("1. Recruit new characters");
-        System.out.println("2. Remove dead character");
-        System.out.println("3. List roster");
-        System.out.println("4. Generate mission team");
-        System.out.println("5. Level up character");
-        System.out.println("6. Quit");
-        System.out.print("\nChoose an option: ");
-        return scanner.nextInt();
+        while (true) {
+            try {
+                System.out.println("\n=== DARKEST DUNGEON ROSTER MANAGER ===");
+                System.out.println("1. Recruter de nouveaux personnages");
+                System.out.println("2. Supprimer un personnage mort");
+                System.out.println("3. Liste du roster");
+                System.out.println("4. Générer une équipe de mission");
+                System.out.println("5. Augmenter le niveau d'un personnage");
+                System.out.println("6. Augmenter la taille du roster");
+                System.out.println("7. Gérer la disponibilité");
+                System.out.println("8. Réinitialiser la sauvegarde");
+                System.out.println("9. Quitter");
+                System.out.print("\nChoisissez une option : ");
+                
+                int choix = scanner.nextInt();
+                if (choix >= 1 && choix <= 9) {
+                    return choix;
+                }
+                System.out.println("Veuillez entrer un nombre entre 1 et 9.");
+            } catch (InputMismatchException e) {
+                System.out.println("Veuillez entrer un nombre valide.");
+                scanner.nextLine(); // Vider le buffer
+            }
+        }
     }
 
     public int askNumberOfRecruits() {
@@ -105,5 +121,29 @@ public class ConsoleView {
 
     public void displayMessage(String message) {
         System.out.println("\n" + message);
+    }
+
+    public String getConfirmation() {
+        scanner.nextLine(); // Vider le buffer
+        return scanner.nextLine().trim();
+    }
+
+    public int askNewRosterSize(int currentSize) {
+        System.out.println("Taille actuelle du roster: " + currentSize);
+        System.out.println("Entrez la nouvelle taille (doit être supérieure à la taille actuelle):");
+        return scanner.nextInt();
+    }
+
+    public String askAvailabilityReason() {
+        System.out.println("Entrez la raison de l'indisponibilité :");
+        scanner.nextLine(); // Vider le buffer
+        return scanner.nextLine();
+    }
+
+    public boolean askNewAvailability() {
+        System.out.println("1. Marquer comme indisponible");
+        System.out.println("2. Marquer comme disponible");
+        int choice = scanner.nextInt();
+        return choice != 1;
     }
 } 

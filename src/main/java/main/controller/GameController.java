@@ -6,6 +6,8 @@ import main.Character;
 import main.view.ConsoleView;
 import java.util.List;
 import main.utils.JsonDataManager;
+import java.io.File;
+import main.Main;
 
 public class GameController {
     private ConsoleView view;
@@ -47,6 +49,15 @@ public class GameController {
                 handleLevelUp();
                 break;
             case 6:
+                handleRosterSizeIncrease();
+                break;
+            case 7:
+                handleAvailability();
+                break;
+            case 8:
+                handleReset();
+                break;
+            case 9:
                 running = false;
                 jsonManager.saveGameState(rosterManager.getRoster(), rosterManager.getMaxSize());
                 view.displayMessage("Game saved. Thank you for playing!");
@@ -138,6 +149,70 @@ public class GameController {
             }
         } else {
             view.displayError("Character not found!");
+        }
+    }
+
+    private void handleRosterSizeIncrease() {
+        int currentSize = rosterManager.getMaxSize();
+        int newSize = view.askNewRosterSize(currentSize);
+        
+        if (newSize <= currentSize) {
+            view.displayError("La nouvelle taille doit être supérieure à " + currentSize);
+            return;
+        }
+        
+        rosterManager.setMaxSize(newSize);
+        view.displayMessage("Taille du roster augmentée à " + newSize);
+    }
+
+    private void handleAvailability() {
+        if (rosterManager.getRosterSize() == 0) {
+            view.displayError("Roster is empty!");
+            return;
+        }
+
+        view.displayRoster(rosterManager.toString());
+        String name = view.askCharacterName();
+        
+        Character character = null;
+        for (Character c : rosterManager.getRoster()) {
+            if (c.getName().equalsIgnoreCase(name)) {
+                character = c;
+                break;
+            }
+        }
+        
+        if (character != null) {
+            boolean newAvailability = view.askNewAvailability();
+            String reason = newAvailability ? "" : view.askAvailabilityReason();
+            character.setAvailability(newAvailability, reason);
+            view.displayMessage("Statut de " + name + " mis à jour.");
+        } else {
+            view.displayError("Character not found!");
+        }
+    }
+
+    private void handleReset() {
+        view.displayMessage("Êtes-vous sûr de vouloir réinitialiser la sauvegarde ? (o/n)");
+        String response = view.getConfirmation();
+        if (response.equalsIgnoreCase("o")) {
+            // Supprimer le shutdown hook avant de reset
+            Main.removeShutdownHook();
+            
+            jsonManager.resetSaveFile();
+            rosterManager = new RosterManager();
+            
+            // Vérifier si le fichier a bien été supprimé
+            File saveFile = new File("resources/gamestate.json");
+            if (saveFile.exists()) {
+                view.displayError("Attention: Le fichier de sauvegarde n'a pas pu être supprimé");
+            } else {
+                view.displayMessage("Fichier de sauvegarde supprimé avec succès");
+            }
+            
+            view.displayMessage("Sauvegarde réinitialisée. Le roster est maintenant vide.");
+        } else {
+            view.displayMessage("Réinitialisation annulée.");
         }
     }
 } 
