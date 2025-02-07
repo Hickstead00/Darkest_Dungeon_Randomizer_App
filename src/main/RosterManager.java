@@ -1,14 +1,26 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class RosterManager {
-    private int rostermaxSize = 9 ;
-    private List<Character> roster;;
+    private int rostermaxSize = 9;
+    private List<Character> roster;
 
     public RosterManager() {
         this.roster = new ArrayList<Character>();
+    }
+
+    // Nouveau constructeur pour charger un état sauvegardé
+    public RosterManager(List<Character> savedRoster, int maxSize) {
+        this.roster = savedRoster;
+        this.rostermaxSize = maxSize;
+    }
+
+    // Getter pour la taille maximale
+    public int getMaxSize() {
+        return rostermaxSize;
     }
 
     public int getRosterSize() {
@@ -52,5 +64,34 @@ public class RosterManager {
             sb.append("\n\n");
         }
         return sb.toString();
+    }
+
+    public List<Character> generateTeamForMission(int missionLevel) {
+        List<Character> availableCharacters = new ArrayList<>();
+        
+        // Filtrer les personnages selon le niveau de mission
+        for (Character c : roster) {
+            int charLevel = c.getLevel();
+            boolean isEligible = switch (missionLevel) {
+                case 1 -> charLevel >= 0 && charLevel <= 2;
+                case 2 -> charLevel >= 3 && charLevel <= 4;
+                case 3 -> charLevel >= 4 && charLevel <= 5;
+                case 4 -> charLevel == 6;
+                default -> false;
+            };
+            
+            if (isEligible) {
+                availableCharacters.add(c);
+            }
+        }
+
+        // Vérifier s'il y a assez de personnages éligibles
+        if (availableCharacters.size() < 4) {
+            return null;
+        }
+
+        // Mélanger la liste et prendre les 4 premiers
+        Collections.shuffle(availableCharacters);
+        return availableCharacters.subList(0, 4);
     }
 }
