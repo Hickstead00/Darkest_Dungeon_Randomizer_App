@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7da8d4aa-8f24-4aef-a422-e945bfca83ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/CharacterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/CharacterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/RosterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/RosterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/utils/JsonDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/utils/JsonDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/view/ConsoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/names.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/names.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hickstead00&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hickstead00/Darkest_Dungeon_Randomizer_App.git&quot;,
+    &quot;accountId&quot;: &quot;9259b635-68d2-4840-b66d-81311d17e025&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -85,19 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Darkest_Dungeon_Randomizer_App" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Darkest_Dungeon_Randomizer_App" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -124,7 +115,9 @@
       <workItem from="1738876513859" duration="4555000" />
       <workItem from="1738930240830" duration="193000" />
       <workItem from="1738949805820" duration="4531000" />
-      <workItem from="1738954957277" duration="5113000" />
+      <workItem from="1738954957277" duration="5399000" />
+      <workItem from="1740642613697" duration="104000" />
+      <workItem from="1740644971648" duration="162000" />
     </task>
     <servers />
   </component>
